@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="FR">
+<head>
+	<meta charset="UTF-8">
+	<title>Mini CRM</title>
+</head>
+
+<body>
+	<h1>Coordonnées clients</h1>
+
+	<form action="/post/customers" method="POST">
+		<label for="last_name">Nom</label><br>
+		<input id="last_name" type="text" value="Tartenpion"><br />
+		<label for="first_name">Prénom</label>
+		<input id="first_name" type="text" value="Louis"><br />
+		<label for="email">Email</label>
+		<input id="email" type="mail" value="michel@dedieu.com"><br />
+
+		<label for="tel">Téléphone</label>
+		<input id="tel" type="tel" value="07907856"><br />
+
+		<label for="description">Description</label>
+		<input id="description" type="text" value="blalbladhqskjdhkqsdhkq"><br />
+		<button type="submit">Envoyer</button>
+	</form>
+	<br>
+	<br>
+
+
+	
+	<div id="app">
+
+	</div>
+	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+	
+	<script src="app.js"></script> 
+	<script src="./serveur.js"></script> 
+
+</body>
+</html>
